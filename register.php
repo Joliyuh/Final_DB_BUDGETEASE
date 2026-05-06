@@ -54,7 +54,19 @@ if(isset($_POST['register'])){
 
         <h1 class="logo text-center">
             BudgetEase
+        </h1>
 
+        <h3 class="sub-title text-center mb-4">
+            Create Account
+        </h3>
+
+        <form method="POST">
+
+            <input type="text"
+                   name="fullname"
+                   class="form-control mb-3"
+                   placeholder="Full Name"
+                   required>
 
 
 
