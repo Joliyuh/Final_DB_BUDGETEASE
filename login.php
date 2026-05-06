@@ -32,7 +32,6 @@ if(isset($_POST['login'])){
 }
 ?>
 
-Login.php
 
 <!DOCTYPE html>
 <html>
