@@ -19,10 +19,24 @@ if(isset($_POST['register'])){
 
         $error = "Email already exists";
 
+       } else {
 
+        $sql = "INSERT INTO users
+        (Fullname, Email, Password)
 
+        VALUES
+        ('$fullname','$email','$password')";
 
-
-
-
+        if($conn->query($sql)){
+            header("Location: login.php");
+        }
     }
+}
+?>
+
+
+
+
+
+
+    
