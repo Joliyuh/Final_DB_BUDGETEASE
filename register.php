@@ -11,6 +11,14 @@ if(isset($_POST['register'])){
         $_POST['password'],
         PASSWORD_DEFAULT
     );
+ $check = $conn->query(
+        "SELECT * FROM users WHERE Email='$email'"
+    );
+
+    if($check->num_rows > 0){
+
+        $error = "Email already exists";
+
 
 
 
