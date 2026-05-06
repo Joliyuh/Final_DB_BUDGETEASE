@@ -44,6 +44,16 @@ if(isset($_POST['register'])){
 
 <link rel="stylesheet" href="style.css">
 
+</head>
+
+<body>
+
+<div class="container d-flex justify-content-center align-items-center vh-100">
+
+    <div class="card-box">
+
+        <h1 class="logo text-center">
+            BudgetEase
 
 
 
