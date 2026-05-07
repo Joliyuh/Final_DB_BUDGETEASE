@@ -67,7 +67,11 @@ if(isset($_POST['register'])){
                    class="form-control mb-3"
                    placeholder="Full Name"
                    required>
-
+<input type="email"
+                   name="email"
+                   class="form-control mb-3"
+                   placeholder="Email"
+                   required>
 
 
 
