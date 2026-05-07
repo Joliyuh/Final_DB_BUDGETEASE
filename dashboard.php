@@ -9,3 +9,11 @@ $totalIncome = $conn->query(
 "SELECT SUM(Amount) AS total FROM transactions
 WHERE User_ID='$user_id' AND Type='Income'"
 )->fetch_assoc()['total'];
+
+
+$totalExpense = $conn->query(
+"SELECT SUM(Amount) AS total FROM transactions
+WHERE User_ID='$user_id' AND Type='Expense'"
+)->fetch_assoc()['total'];
+
+$balance = $totalIncome - $totalExpense;
