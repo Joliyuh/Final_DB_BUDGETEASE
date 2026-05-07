@@ -86,3 +86,28 @@ Welcome, <?= $fullname ?>
 </div>
 
 </div>
+
+<div class="chart-box">
+<canvas id="financeChart"></canvas>
+</div>
+
+<br>
+
+<div class="table-container">
+
+<h2>Recent Transactions</h2>
+
+<br>
+
+<table>
+
+<tr>
+<th>Category</th>
+<th>Amount</th>
+<th>Type</th>
+<th>Description</th>
+<th>Date</th>
+<th>Action</th>
+</tr>
+
+<?php while($row = $transactions->fetch_assoc()){ ?>
