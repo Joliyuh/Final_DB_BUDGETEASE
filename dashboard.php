@@ -27,3 +27,15 @@ WHERE transactions.User_ID='$user_id'
 ORDER BY Date DESC"
 );
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
