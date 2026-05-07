@@ -17,3 +17,13 @@ WHERE User_ID='$user_id' AND Type='Expense'"
 )->fetch_assoc()['total'];
 
 $balance = $totalIncome - $totalExpense;
+
+$transactions = $conn->query(
+"SELECT transactions.*, categories.Category_Name
+FROM transactions
+INNER JOIN categories
+ON transactions.Category_ID = categories.Category_ID
+WHERE transactions.User_ID='$user_id'
+ORDER BY Date DESC"
+);
+?>
