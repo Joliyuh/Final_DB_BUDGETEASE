@@ -72,7 +72,32 @@ if(isset($_POST['register'])){
                    class="form-control mb-3"
                    placeholder="Email"
                    required>
+            <input type="password"
+                   name="password"
+                   class="form-control mb-3"
+                   placeholder="Password"
+                   required>
 
+            <button class="btn btn-success w-100"
+                    name="register">
+
+                Register
+
+            </button>
+
+        </form>
+
+        <a href="login.php"
+           class="account-link d-block text-center mt-3">
+
+            Already have an account?
+
+        </a>
+
+    </div>
+
+</div>
+</html>
 
 
 
