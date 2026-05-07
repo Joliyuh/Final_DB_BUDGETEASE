@@ -53,3 +53,17 @@ ORDER BY Date DESC"
 <a href="logout.php">Logout</a>
 
 </div>
+
+<div class="main">
+
+<div class="topbar">
+
+<div class="page-title">
+Financial Dashboard
+</div>
+
+<div class="user-box">
+Welcome, <?= $fullname ?>
+</div>
+
+</div>
