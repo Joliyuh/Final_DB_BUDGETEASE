@@ -67,3 +67,22 @@ Welcome, <?= $fullname ?>
 </div>
 
 </div>
+
+<div class="cards">
+
+<div class="card-box">
+<h3>Total Income</h3>
+<h1>₱<?= number_format($totalIncome,2) ?></h1>
+</div>
+
+<div class="card-box">
+<h3>Total Expense</h3>
+<h1>₱<?= number_format($totalExpense,2) ?></h1>
+</div>
+
+<div class="card-box">
+<h3>Remaining Balance</h3>
+<h1>₱<?= number_format($balance,2) ?></h1>
+</div>
+
+</div>
