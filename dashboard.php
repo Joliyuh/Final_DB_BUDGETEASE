@@ -39,3 +39,17 @@ ORDER BY Date DESC"
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">BudgetEase</div>
+
+<a href="dashboard.php">Dashboard</a>
+<a href="add_transaction.php">Add Transaction</a>
+<a href="categories.php">Categories</a>
+<a href="reports.php">Reports</a>
+<a href="logout.php">Logout</a>
+
+</div>
