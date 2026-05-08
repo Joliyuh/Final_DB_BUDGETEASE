@@ -18,3 +18,17 @@ if(isset($_POST['add'])){
     $date = $_POST['date'];
 
     $conn->query(
+
+        "INSERT INTO transactions
+
+    (User_ID, Category_ID, Amount, Type, Description, Date)
+
+    VALUES
+
+    ('$user_id','$category','$amount','$type','$description','$date')"
+
+    );
+
+    header("Location: dashboard.php");
+}
+?>
