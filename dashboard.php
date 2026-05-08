@@ -111,3 +111,57 @@ Welcome, <?= $fullname ?>
 </tr>
 
 <?php while($row = $transactions->fetch_assoc()){ ?>
+
+<tr>
+
+<td><?= $row['Category_Name'] ?></td>
+<td>₱<?= number_format($row['Amount'],2) ?></td>
+<td><?= $row['Type'] ?></td>
+<td><?= $row['Description'] ?></td>
+<td><?= $row['Date'] ?></td>
+
+<td>
+<a href="edit_transaction.php?id=<?= $row['Transaction_ID'] ?>"
+class="btn btn-edit">
+Edit
+</a>
+
+<a href="delete_transaction.php?id=<?= $row['Transaction_ID'] ?>"
+class="btn btn-delete"
+onclick="return confirm('Delete transaction?')">
+Delete
+</a>
+</td>
+
+</tr>
+
+<?php } ?>
+
+</table>
+
+</div>
+
+</div>
+
+<script>
+
+const ctx = document.getElementById('financeChart');
+
+new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        labels: ['Income', 'Expense'],
+        datasets: [{
+            data: [<?= $totalIncome ?>, <?= $totalExpense ?>],
+            backgroundColor: [
+                '#22c55e',
+                '#ef4444'
+            ]
+        }]
+    }
+});
+
+</script>
+
+</body>
+</html>
