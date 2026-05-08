@@ -10,3 +10,11 @@ $categories = $conn->query(
 WHERE User_ID='$user_id'");
 
 if(isset($_POST['add'])){
+
+ $category = $_POST['category'];
+    $amount = $_POST['amount'];
+    $type = $_POST['type'];
+    $description = $_POST['description'];
+    $date = $_POST['date'];
+
+    $conn->query(
