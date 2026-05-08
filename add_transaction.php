@@ -52,3 +52,22 @@ if(isset($_POST['add'])){
 <div class="container mt-5">
 
 <div class="card p-4 login-card">
+
+<h2>Add Transaction</h2>
+
+
+<form method="POST">
+
+<select name="category"
+        class="form-control mb-3"
+        required>
+
+<option value="">Select Category</option>
+
+<?php while($cat = $categories->fetch_assoc()){ ?>
+
+<option value="<?= $cat['Category_ID'] ?>">
+<?= $cat['Category_Name'] ?>
+</option>
+
+<?php } ?>
