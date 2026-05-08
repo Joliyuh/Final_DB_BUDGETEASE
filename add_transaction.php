@@ -32,3 +32,13 @@ if(isset($_POST['add'])){
     header("Location: dashboard.php");
 }
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Add Transaction</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
