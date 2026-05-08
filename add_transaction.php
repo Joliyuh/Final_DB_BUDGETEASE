@@ -88,3 +88,30 @@ if(isset($_POST['add'])){
 <option>Expense</option>
 
 </select>
+
+<textarea name="description"
+          class="form-control mb-3"
+          placeholder="Description"></textarea>
+
+<input type="date"
+       name="date"
+       class="form-control mb-3"
+       required>
+
+<button class="btn btn-success w-100"
+        name="add">
+
+Save Transaction
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
