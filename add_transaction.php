@@ -71,3 +71,20 @@ if(isset($_POST['add'])){
 </option>
 
 <?php } ?>
+
+</select>
+
+<input type="number"
+       step="0.01"
+       name="amount"
+       class="form-control mb-3"
+       placeholder="Amount"
+       required>
+
+<select name="type"
+        class="form-control mb-3">
+
+<option>Income</option>
+<option>Expense</option>
+
+</select>
