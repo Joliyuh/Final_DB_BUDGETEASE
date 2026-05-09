@@ -4,10 +4,7 @@ include 'connection.php';
 
 if(isset($_POST['login'])){
 
-    $email = $_POST['email'];
-    $password = $_POST['password'];
 
-    $sql = "SELECT * FROM users WHERE Email='$email'";
 
     $result = $conn->query($sql);
 
