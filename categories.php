@@ -68,3 +68,17 @@ ORDER BY Category_Name ASC"
    class="btn btn-secondary">
 
 Back Dashboard
+
+</a>
+
+</div>
+
+<?php
+if(isset($success)){
+    echo "<div class='alert alert-success'>$success</div>";
+}
+
+if(isset($error)){
+    echo "<div class='alert alert-danger'>$error</div>";
+}
+?>
