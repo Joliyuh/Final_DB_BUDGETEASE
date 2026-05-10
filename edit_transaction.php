@@ -41,3 +41,52 @@ if(isset($_POST['update'])){
 <link rel="stylesheet" href="style.css">
 
 </head>
+
+<body class="main-body">
+
+<div class="container mt-5">
+
+<div class="edit-card mx-auto"
+     style="max-width:450px;">
+
+<h2>Edit Transaction</h2>
+
+<form method="POST">
+
+<input type="number"
+       step="0.01"
+       name="amount"
+       value="<?= $row['Amount'] ?>"
+       class="form-control mb-3">
+
+<select name="type"
+        class="form-control mb-3">
+
+<option <?= $row['Type']=="Income" ? "selected" : "" ?>>
+Income
+</option>
+
+<option <?= $row['Type']=="Expense" ? "selected" : "" ?>>
+Expense
+</option>
+
+</select>
+
+<textarea name="description"
+          class="form-control mb-3"><?= $row['Description'] ?></textarea>
+
+<button class="btn btn-primary w-100"
+        name="update">
+
+Update
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</body>
+</html>
