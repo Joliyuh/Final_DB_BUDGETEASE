@@ -98,3 +98,51 @@ if(isset($error)){
        required>
 
 </div>
+<div class="col-md-2">
+
+<button class="btn btn-success w-100"
+        name="add">
+
+Add
+
+</button>
+
+</div>
+
+</div>
+
+</form>
+
+</div>
+
+<div class="card p-4 custom-dark-card">
+
+<table class="table table-dark table-hover">
+
+<tr>
+
+<th>ID</th>
+<th>Category Name</th>
+
+</tr>
+
+<?php while($row = $categories->fetch_assoc()){ ?>
+
+<tr>
+
+<td><?= $row['Category_ID'] ?></td>
+
+<td><?= $row['Category_Name'] ?></td>
+
+</tr>
+
+<?php } ?>
+
+</table>
+
+</div>
+
+</div>
+
+</body>
+</html>
