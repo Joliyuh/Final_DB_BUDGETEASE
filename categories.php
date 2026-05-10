@@ -33,3 +33,13 @@ if(isset($_POST['add'])){
         }
     }
 }
+
+$categories = $conn->query(
+
+"SELECT * FROM categories
+WHERE User_ID='$user_id'
+
+ORDER BY Category_Name ASC"
+
+);
+?>
