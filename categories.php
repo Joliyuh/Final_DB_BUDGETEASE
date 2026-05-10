@@ -17,3 +17,19 @@ if(isset($_POST['add'])){
         (User_ID, Category_Name)
 
         VALUES
+
+        
+        ('$user_id','$category')
+
+        ";
+
+        if($conn->query($sql)){
+
+            $success = "Category added successfully";
+
+        } else {
+
+            $error = $conn->error;
+        }
+    }
+}
