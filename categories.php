@@ -53,3 +53,18 @@ ORDER BY Category_Name ASC"
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-dark text-white">
+
+<div class="container mt-5 category-container">
+
+<div class="d-flex justify-content-between mb-4">
+
+<h2>Manage Categories</h2>
+
+<a href="dashboard.php"
+   class="btn btn-secondary">
+
+Back Dashboard
