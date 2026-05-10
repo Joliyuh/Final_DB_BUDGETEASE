@@ -82,3 +82,19 @@ if(isset($error)){
     echo "<div class='alert alert-danger'>$error</div>";
 }
 ?>
+
+<div class="card p-4 bg-dark border-secondary mb-4">
+
+<form method="POST">
+
+<div class="row">
+
+<div class="col-md-10">
+
+<input type="text"
+       name="category"
+       class="form-control"
+       placeholder="Enter category name"
+       required>
+
+</div>
